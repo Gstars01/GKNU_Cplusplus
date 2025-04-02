@@ -24,6 +24,19 @@
 #include<iostream>
 #include<windows.h>
 using namespace std;
+class Job {
+protected:
+	int atk, hp;
+public:
+	Job(int a, int b) :atk(a), hp(b) {}
+	virtual int Skill() = 0;
+};
+class archer : public Job {
+public:
+	archer(int a, int b) :Job(a, b) {}
+	int Skill() override {
+
+	}
 
 // card는 객체임 안쓸때는 빈 객체를 생성하여 0을 전달할것 
 void draw(int Ai_Lp,int Player_Lp,int card1,int card2,int card3,int card4,int card5,int card6) {
