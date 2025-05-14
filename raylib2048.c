@@ -121,7 +121,14 @@ void DrawBoard() {
             }
             else if (value>=128) {
                 DrawText(TextFormat("%d", value),
-                    tile.x + TILE_SIZE / 3.7,
+                    tile.x + TILE_SIZE / 3.8,
+                    tile.y + TILE_SIZE / 2.8,
+                    35,
+                    RAYWHITE);
+            }
+            else if (value >= 1024) {
+                DrawText(TextFormat("%d", value),
+                    tile.x + TILE_SIZE / 6,
                     tile.y + TILE_SIZE / 2.8,
                     35,
                     RAYWHITE);
