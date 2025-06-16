@@ -37,7 +37,7 @@ int main() {
 
 }
 ```
-### template
+### template with Template specialization
 ```cpp
 #include<iostream>
 using namespace std;
